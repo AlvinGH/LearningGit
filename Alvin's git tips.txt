@@ -1,0 +1,49 @@
+==================================================================================================
+git config
+		git config --[system|global|local] <section>.<key> <value> : 设置git 配置文件
+==================================================================================================
+git diff 
+		git diff : stage & work
+		git diff HEAD : work & repo
+		git diff --cached/--staged : stage & repo
+==================================================================================================
+git reset
+		git reset HEAD（git reset）: 重置stage，用repo内容重置stage,work不影响
+		git reset -- filename : 仅重置stage中的指定文件	
+		git reset --soft <rev> : stage和work不受影响, repo回到指定版本rev
+		git reset --mixed <rev>(git reset default) : work 不变，repo & stage回退到指定rev
+		git reset --hard <rev> : repo，work & stage回退到指定rev
+
+
+==================================================================================================
+git checkout
+		git checkout [HEAD] : 汇总显示work，stage 及 repo 的差异
+		git checkout -- [path] : 从stage 中检出文件到work
+		git checkout <commit>  -- [path] : 从repo 中检出文件覆盖 stage和work
+		git checkout <branch> : 切换HEAD到branch分支
+		git checkout -b <new_branch> : 生成并切换到new_branch
+
+
+
+
+		git checkout . / git checkout -- <file> : 用stage中的文件，覆盖work中的文件
+		
+
+		git checkout HEAD .  / git checkout HEAD <file> : 用HEAD指向的文件，覆盖work 和stage中的文件
+		
+==================================================================================================
+git rm
+		git rm --cached <file>: 从stage中删除文件，work不影响
+==================================================================================================
+git cat-file 
+		git cat-file [-p] <shaID> : 显示shaID对应的对象内容
+
+==================================================================================================
+==================================================================================================
+==================================================================================================
+==================================================================================================
+==================================================================================================
+
+
+
+		
